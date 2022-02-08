@@ -1,12 +1,21 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./SidebarOption.css";
 
 function SidebarOption({ active, text, Icon }) {
   return (
-    <div className={`sidebarOption ${active && "sidebarOption--active"}`}>
+
+    <div className="sidebarOption" >
       <Icon />
-      <h2>{text}</h2>
-    </div>
+
+      <NavLink className="sidebarOption--link"
+        to={
+          {
+            pathname: `/${text}`
+          }
+        } >{text}</NavLink>
+
+    </div >
   );
 }
 

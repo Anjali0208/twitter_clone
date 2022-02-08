@@ -12,26 +12,58 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import { Button } from "@material-ui/core";
 
+
 function Sidebar() {
   return (
     <div className="sidebar">
       <TwitterIcon className="sidebar__twitterIcon" />
 
-      <SidebarOption active Icon={HomeIcon} text="Home" />
+      <SidebarOption Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
       <SidebarOption Icon={MailOutlineIcon} text="Messages" />
-      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
       <SidebarOption Icon={ListAltIcon} text="Lists" />
       <SidebarOption Icon={PermIdentityIcon} text="Profile" />
       <SidebarOption Icon={MoreHorizIcon} text="More" />
+      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmark" />
+
 
       {/* Button -> Tweet */}
       <Button variant="outlined" className="sidebar__tweet" fullWidth>
         Tweet
       </Button>
-    </div>
+
+    </div >
   );
 }
 
 export default Sidebar;
+
+
+
+
+
+
+
+
+
+
+
+//       <SidebarOption active Icon={HomeIcon} text="Home" />  
+//        <SidebarOption Icon={SearchIcon} text="Explore" />
+//         <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
+//         <SidebarOption Icon={MailOutlineIcon} text="Messages" />
+//         <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
+//         <SidebarOption Icon={ListAltIcon} text="Lists" />
+//         <SidebarOption Icon={PermIdentityIcon} text="Profile" />
+//         <SidebarOption Icon={MoreHorizIcon} text="More" /> 
+
+
+
+// <NavLink to="/" Icon={HomeIcon} className="sidebar__link" activeClassName="sidebar__link--active">Home</NavLink>
+//       <NavLink to="/explore" className="sidebar__link">Explore</NavLink>
+//       <NavLink to="/notification" className="sidebar__link">Notification</NavLink>
+//       <NavLink to="/message" className="sidebar__link">Messages</NavLink>
+//        <NavLink to="/bookmark" className="sidebar__link">Bookmark</NavLink> 
+//       <NavLink to="/list" className="sidebar__link">Lists</NavLink>
+//     <NavLink to="/profile" className="sidebar__link">Profile</NavLink> 

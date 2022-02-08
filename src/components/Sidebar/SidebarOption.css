@@ -15,12 +15,18 @@
   padding: 20px;
 }
 
-.sidebarOption > h2 {
+.sidebarOption {
   font-weight: 800;
   font-size: 20px;
-  margin-right: 20px;
+  margin-right: 25px;
+  color: var(--twitter-color);
+}
+.sidebarOption--active {
+  border: 5px solid var(--twitter-color);
+  border-radius: 2px;
 }
 
-.sidebarOption--active {
+.sidebarOption--link {
   color: var(--twitter-color);
+  text-decoration: none;
 }

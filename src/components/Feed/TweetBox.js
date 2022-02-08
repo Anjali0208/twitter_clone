@@ -11,8 +11,8 @@ function TweetBox() {
     e.preventDefault();
 
     db.collection("posts").add({
-      displayName: "Rafeh Qazi",
-      username: "cleverqazi",
+      displayName: "bangtan",
+      username: "BTS_TWT",
       verified: true,
       text: tweetMessage,
       image: tweetImage,
